@@ -1,5 +1,4 @@
-FROM gcc:latest
-COPY Program2.c .
-RUN gcc -o Program2 Program2.c
-CMD ["./Program2"]
+FROM php:7.4-apache
+COPY . /var/www/html/
+EXPOSE 80
 
